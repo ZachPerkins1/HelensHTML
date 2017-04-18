@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Mathematics</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='apexam.css') }}">
+</head>
+<body>
+  <p class="default">Hello! Welcome to <b>Simple Mathematics</b>. Fill out everything in this form to your learning/testing preference and click <b>Start</b> to proceed to the next page.</p>
+
+  <form action="{{ url_for('start') }}" method="POST">
+    <div class="simplebutton">
+        <b>Difficulty</b><br>
+        <select name="difficulty">
+            <option value="0">Easy</option>
+            <option value="1">Regular</option>
+            <option value="2">Challenge</option>
+        </select>
+        <br><br>
+        <b>Number of Problems</b><br>
+        <input type="number" name="number" style="width:30px;">
+        <br><br>
+        <input type="submit" value="Start">
+    </div>    
+  </form>
+</body>
+</html>

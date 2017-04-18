@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+}
+
+p.default {
+  font-family: tahoma, sans-serif;
+}
+div.simplebutton {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+}
